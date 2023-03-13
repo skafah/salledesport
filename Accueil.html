@@ -28,6 +28,7 @@ Author: Kamleshyadav
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="readmore.css">
 </head>
 <body>
 <!-- preloader start -->
@@ -109,7 +110,7 @@ Author: Kamleshyadav
           <h1>vous n'échouez que lorsque vous arrêtez d'essayer</h1>
           <h2>prêt à change votre physique?</h2>
           <div class="banner_btn_wrap">
-            <a href="javascript:void(0);" class="fit_btn">En Savoir Plus</a>
+            <a href="#NOUS" class="fit_btn">En Savoir Plus</a>
             <a href="javascript:void(0);" class="fit_btn btn2">Rejoindre Maintenant</a>
           </div>
         </div>
@@ -122,17 +123,17 @@ Author: Kamleshyadav
   <!-- Work time section start -->
   <section class="fit_worktime_wrapper">
     <div class="container">
-        <ul class="nav nav-pills" id="pills-tab" role="tablist">
-          <li>
-            <a class="active" data-toggle="pill" href="#mensclass" role="tab" aria-controls="mensclass" aria-selected="true">Classes Pour Hommes</a>
+        <ul class="nav nav-tabs" id="pills-tab" role="tablist">
+          <li class="nav active">
+            <a class="nav  active " data-toggle="pill" onclick="myFunction1()" role="tab" aria-controls="mensclass" aria-selected="true">Classes Pour Hommes</a>
           </li>
           <li>
-            <a data-toggle="pill" href="#womenclass" role="tab" aria-controls="womenclass" aria-selected="false">Classes Pour Femmes</a>
+            <a onclick="myFunction2()" data-toggle="pill"  role="tab" aria-controls="womenclass" aria-selected="false">Classes Pour Femmes</a>
           </li>
         </ul>
-        <div class="worktime_inner">
-          <div class="tab-content">
-            <div class="tab-pane fade show active" id="mensclass" role="tabpanel" aria-labelledby="mensclass">
+        <div class="worktime_inner" >
+          <div class="tab-content" >
+            <div class="tab-pane  show active" id="menclass" role="tabpanel" aria-labelledby="mensclass">
               <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12">
                   <div class="fit_worktime_box">
@@ -167,7 +168,7 @@ Author: Kamleshyadav
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="womenclass" role="tabpanel" aria-labelledby="womenclass">
+            <div class="tab-pane " id="womenclass" role="tabpanel" aria-labelledby="womenclass">
               <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-12">
                   <div class="fit_worktime_box">
@@ -186,7 +187,7 @@ Author: Kamleshyadav
                       <svg width="50px" height="50px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M6.250,7.812 L6.250,1.561 C6.250,0.697 6.949,-0.001 7.812,-0.001 C8.676,-0.001 9.375,0.697 9.375,1.561 L9.375,7.812 C9.375,8.675 8.676,9.374 7.812,9.374 C6.949,9.374 6.250,8.675 6.250,7.812 ZM32.812,9.374 C33.676,9.374 34.375,8.675 34.375,7.812 L34.375,1.561 C34.375,0.697 33.676,-0.001 32.812,-0.001 C31.949,-0.001 31.250,0.697 31.250,1.561 L31.250,7.812 C31.250,8.675 31.949,9.374 32.812,9.374 ZM50.000,37.499 C50.000,44.402 44.403,49.998 37.500,49.998 C30.597,49.998 25.000,44.402 25.000,37.499 C25.000,30.595 30.597,24.999 37.500,24.999 C44.403,24.999 50.000,30.595 50.000,37.499 ZM46.875,37.499 C46.875,32.329 42.670,28.123 37.500,28.123 C32.330,28.123 28.125,32.329 28.125,37.499 C28.125,42.669 32.330,46.874 37.500,46.874 C42.670,46.874 46.875,42.669 46.875,37.499 ZM12.500,18.748 L6.250,18.748 L6.250,24.999 L12.500,24.999 L12.500,18.748 ZM6.250,34.373 L12.500,34.373 L12.500,28.123 L6.250,28.123 L6.250,34.373 ZM15.625,24.999 L21.875,24.999 L21.875,18.748 L15.625,18.748 L15.625,24.999 ZM15.625,34.373 L21.875,34.373 L21.875,28.123 L15.625,28.123 L15.625,34.373 ZM3.125,37.187 L3.125,15.625 L37.500,15.625 L37.500,21.873 L40.625,21.873 L40.625,9.684 C40.625,7.786 39.111,6.248 37.241,6.248 L35.937,6.248 L35.937,7.812 C35.937,9.533 34.537,10.936 32.812,10.936 C31.088,10.936 29.688,9.533 29.688,7.812 L29.688,6.248 L10.938,6.248 L10.938,7.812 C10.938,9.533 9.537,10.936 7.812,10.936 C6.088,10.936 4.687,9.533 4.687,7.812 L4.687,6.248 L3.386,6.248 C1.515,6.248 -0.000,7.786 -0.000,9.684 L-0.000,37.187 C-0.000,39.080 1.515,40.624 3.386,40.624 L21.875,40.624 L21.875,37.499 L3.386,37.499 C3.244,37.499 3.125,37.352 3.125,37.187 ZM31.250,24.999 L31.250,18.748 L25.000,18.748 L25.000,24.999 L31.250,24.999 ZM42.187,37.499 L37.500,37.499 L37.500,32.811 C37.500,31.947 36.801,31.249 35.937,31.249 C35.074,31.249 34.375,31.947 34.375,32.811 L34.375,39.061 C34.375,39.925 35.074,40.624 35.937,40.624 L42.187,40.624 C43.051,40.624 43.750,39.925 43.750,39.061 C43.750,38.197 43.051,37.499 42.187,37.499 Z"/></svg>
                     </span>
                     <h2>Horaires</h2>
-                    <p>Jours de la semaine: 05:00 – 22:00</p>
+                    <p>Jours de la semaine: 07:00 – 20:00</p>
                     <p>Samedi: 05:00 – 18:00</p>
                     <p>Dimanche: Fermée</p>
                   </div>
@@ -213,7 +214,7 @@ Author: Kamleshyadav
       <div class="row">
         <div class="col-xl-12 col-lg-8 col-md-10 col-sm-12 col-12 offset-xl-0 offset-lg-2 offset-md-1">
           <div class="fit_heading text-center">
-            <h2 class="heading_title">À Propos De Nous</h2>
+            <h2 class="heading_title " id="NOUS">À Propos De Nous</h2>
             <p>Fit Club a été fondé en 2010 par des passionnés de fitness, John et Jane Smith. Après de nombreuses années de lutte pour trouver une salle de sport proposant une gamme complète d'équipements et de cours, ils ont décidé de créer leur propre centre de fitness.</p>
           </div>
         </div>
@@ -440,6 +441,7 @@ Author: Kamleshyadav
         </div>
       </div>
     </div>
+    <div class="read-more-container">
     <div class="row">
       <div class="col-lg-6 col-md-12">
         <div class="fit_onclass_video">
@@ -449,28 +451,37 @@ Author: Kamleshyadav
             </a>
         </div>
       </div>
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-6 col-md-12 ">
         <div class="fit_onclass_data">
-          <h1 class="about_heading">Fitness</h1>
-          <p class="onclass_pera">La forme physique fait référence à un état de bien-être physique et mental qui est atteint grâce à une activité physique régulière, une alimentation saine et un mode de vie équilibré. Il englobe de nombreux aspects différents de la santé, notamment l'endurance cardiovasculaire, la force et l'endurance musculaires, la flexibilité et la composition corporelle.</p>
-          <p>Le maintien d'un haut niveau de forme physique présente de nombreux avantages, notamment la réduction du risque de maladies chroniques telles que les maladies cardiaques, le diabète et l'obésité. Il peut également améliorer les niveaux d'énergie, stimuler l'humeur et la clarté mentale et améliorer la qualité de vie globale.</p>
-          <p>Il existe de nombreuses façons d'atteindre et de maintenir la forme physique, notamment en participant à des sports, en pratiquant une activité physique régulière comme la course ou la natation, en soulevant des poids, en faisant du yoga ou du Pilates, et plus encore. Il est important de choisir des activités que vous aimez et qui sont durables pour votre style de vie, ainsi que de suivre une alimentation saine et des habitudes de vie qui favorisent votre santé et votre bien-être en général.</p>
-          <p>Dans l'ensemble, la forme physique est un aspect important de la santé et du bien-être en général et peut aider les individus à vivre une vie plus heureuse et plus saine.</p>
-          <a href="javascript:void(0);" class="read_more">En Savoir Plus <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="4px" height="8px"><path fill-rule="evenodd" fill="rgb(240, 87, 32)" d="M4.000,3.989 C4.000,4.131 3.952,4.275 3.856,4.384 L0.835,7.817 C0.642,8.035 0.331,8.035 0.139,7.817 C-0.053,7.599 -0.053,7.245 0.139,7.026 L2.812,3.989 L0.139,0.951 C-0.053,0.733 -0.053,0.378 0.139,0.161 C0.331,-0.058 0.643,-0.058 0.835,0.161 L3.856,3.594 C3.952,3.703 4.000,3.846 4.000,3.989 Z"/></svg></a>
-        </div>
+          <h1 class="about_heading " >Fitness</h1>
+          <p class="onclass_pera ">La forme physique fait référence à un état de bien-être physique et mental qui est atteint grâce à une activité physique régulière, une alimentation saine et un mode de vie équilibré. Il englobe de nombreux aspects différents de la santé, notamment l'endurance cardiovasculaire, la force et l'endurance musculaires, la flexibilité et la composition corporelle.
+            Le maintien d'un haut niveau de forme physique présente de nombreux avantages, notamment la réduction du risque de maladies chroniques telles que les maladies cardiaques, le diabète et l'obésité. Il peut également améliorer les niveaux d'énergie, stimuler l'humeur et la clarté mentale et améliorer la qualité de vie globale.
+          <span class="read-more-text">
+       
+            Il existe de nombreuses façons d'atteindre et de maintenir la forme physique, notamment en participant à des sports, en pratiquant une activité physique régulière comme la course ou la natation, en soulevant des poids, en faisant du yoga ou du Pilates, et plus encore. Il est important de choisir des activités que vous aimez et qui sont durables pour votre style de vie, ainsi que de suivre une alimentation saine et des habitudes de vie qui favorisent votre santé et votre bien-être en général.
+          Dans l'ensemble, la forme physique est un aspect important de la santé et du bien-être en général et peut aider les individus à vivre une vie plus heureuse et plus saine.
+        </span> </p>
+          
+        <span class="read-more-btn"  >En Savoir Plus... </span>
+        
       </div>
     </div>
+    
     <div class="row">
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-6 col-md-12 ">
         <div class="fit_onclass_data">
           <h1 class="about_heading">Yoga</h1>
-          <p class="onclass_pera">Le yoga est une pratique physique, mentale et spirituelle qui trouve son origine dans l'Inde ancienne. Il combine une série de postures avec des techniques de respiration contrôlée et de méditation pour favoriser la force physique, la flexibilité et la relaxation, ainsi que la clarté mentale et le bien-être émotionnel.</p>
-          <p>Il existe de nombreux styles de yoga différents, chacun avec son propre objectif et sa propre approche. Certains styles populaires incluent le Hatha yoga, le Vinyasa yoga, le Bikram yoga et l'Ashtanga yoga.</p>
-          <p>Le yoga est une forme d'exercice à faible impact accessible aux personnes de tous âges et de tous niveaux de forme physique. Cela peut aider à améliorer la santé et la forme physique en général, à réduire le stress et l'anxiété et à augmenter la pleine conscience et la conscience de soi.</p>
-          <p>Le yoga n'est pas seulement une pratique physique, mais un mode de vie qui met l'accent sur l'interdépendance de l'esprit, du corps et de l'esprit. La pratique du yoga peut aider à cultiver un sentiment de paix intérieure et d'équilibre, et peut être un outil puissant pour promouvoir la santé et le bien-être en général.</p>
-          <a href="javascript:void(0);" class="read_more">En Savoir Plus <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="4px" height="8px"><path fill-rule="evenodd" fill="rgb(240, 87, 32)" d="M4.000,3.989 C4.000,4.131 3.952,4.275 3.856,4.384 L0.835,7.817 C0.642,8.035 0.331,8.035 0.139,7.817 C-0.053,7.599 -0.053,7.245 0.139,7.026 L2.812,3.989 L0.139,0.951 C-0.053,0.733 -0.053,0.378 0.139,0.161 C0.331,-0.058 0.643,-0.058 0.835,0.161 L3.856,3.594 C3.952,3.703 4.000,3.846 4.000,3.989 Z"/></svg></a>
-        </div>
+          <p class="onclass_pera">Le yoga est une pratique physique, mentale et spirituelle qui trouve son origine dans l'Inde ancienne. Il combine une série de postures avec des techniques de respiration contrôlée et de méditation pour favoriser la force physique, la flexibilité et la relaxation, ainsi que la clarté mentale et le bien-être émotionnel.
+          Il existe de nombreux styles de yoga différents, chacun avec son propre objectif et sa propre approche. Certains styles populaires incluent le Hatha yoga, le Vinyasa yoga, le Bikram yoga et l'Ashtanga yoga.
+          <span class="read-more-text">
+       
+            Le yoga est une forme d'exercice à faible impact accessible aux personnes de tous âges et de tous niveaux de forme physique. Cela peut aider à améliorer la santé et la forme physique en général, à réduire le stress et l'anxiété et à augmenter la pleine conscience et la conscience de soi.
+            Le yoga n'est pas seulement une pratique physique, mais un mode de vie qui met l'accent sur l'interdépendance de l'esprit, du corps et de l'esprit. La pratique du yoga peut aider à cultiver un sentiment de paix intérieure et d'équilibre, et peut être un outil puissant pour promouvoir la santé et le bien-être en général.
+        </span> </p>
+        <span class="read-more-btn"  >En Savoir Plus... </span>
+        
       </div>
+    </div>
       <div class="col-lg-6 col-md-12">
         <div class="fit_onclass_video">
           <img src="assets/images/online_class2.jpg" class="img-fluid" alt="image" >
@@ -481,7 +492,7 @@ Author: Kamleshyadav
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-6 col-md-12 ">
         <div class="fit_onclass_video">
           <img src="assets/images/online_class3.jpg" class="img-fluid" alt="image" >
             <a href="https://www.youtube.com/embed/8lQzkwqhKTk" rel="external" class="video_btn video_popup" title="title">
@@ -489,18 +500,21 @@ Author: Kamleshyadav
             </a>
         </div>
       </div>
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-6 col-md-12 ">
         <div class="fit_onclass_data">
           <h1 class="about_heading">Cardio</h1>
-          <p class="onclass_pera">L'exercice cardiovasculaire, également connu sous le nom de cardio, fait référence à toute forme d'activité physique qui élève la fréquence cardiaque et augmente la circulation, dans le but d'améliorer la santé et l'endurance cardiovasculaires. Les formes courantes de cardio comprennent la course, le vélo, la natation, le saut à la corde et l'entraînement par intervalles à haute intensité.</p>
-          <p>L'exercice cardio est important pour maintenir un cœur et un système circulatoire en bonne santé, et présente également de nombreux autres avantages pour la santé. Des exercices cardiovasculaires réguliers peuvent aider à réduire le risque de maladie cardiaque, d'accident vasculaire cérébral et d'autres maladies chroniques, ainsi qu'à améliorer la capacité pulmonaire, à stimuler le métabolisme et à favoriser la perte de poids. Il peut également améliorer l'humeur, réduire le stress et l'anxiété et augmenter les niveaux d'énergie et la qualité de vie globale.</p>
-          <p>Les exercices cardio peuvent être pratiqués de différentes manières et peuvent être adaptés à un large éventail de niveaux de condition physique et de préférences. Il est important de choisir des activités que vous aimez et qui sont durables pour votre style de vie, et d'augmenter progressivement l'intensité et la durée de vos entraînements au fil du temps afin de continuer à voir des résultats.</p>
-          <p>Dans l'ensemble, l'exercice cardio est un élément important d'une routine de remise en forme bien équilibrée et peut aider les individus à améliorer leur santé et leur bien-être en général.</p>
-          <a href="javascript:void(0);" class="read_more">En Savoir Plus <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="4px" height="8px"><path fill-rule="evenodd" fill="rgb(240, 87, 32)" d="M4.000,3.989 C4.000,4.131 3.952,4.275 3.856,4.384 L0.835,7.817 C0.642,8.035 0.331,8.035 0.139,7.817 C-0.053,7.599 -0.053,7.245 0.139,7.026 L2.812,3.989 L0.139,0.951 C-0.053,0.733 -0.053,0.378 0.139,0.161 C0.331,-0.058 0.643,-0.058 0.835,0.161 L3.856,3.594 C3.952,3.703 4.000,3.846 4.000,3.989 Z"/></svg></a>
+          <p class="onclass_pera">L'exercice cardiovasculaire, également connu sous le nom de cardio, fait référence à toute forme d'activité physique qui élève la fréquence cardiaque et augmente la circulation, dans le but d'améliorer la santé et l'endurance cardiovasculaires. Les formes courantes de cardio comprennent la course, le vélo, la natation, le saut à la corde et l'entraînement par intervalles à haute intensité.
+          L'exercice cardio est important pour maintenir un cœur et un système circulatoire en bonne santé, et présente également de nombreux autres avantages pour la santé. Des exercices cardiovasculaires réguliers peuvent aider à réduire le risque de maladie cardiaque, d'accident vasculaire cérébral et d'autres maladies chroniques, ainsi qu'à améliorer la capacité pulmonaire, à stimuler le métabolisme et à favoriser la perte de poids.<span class="read-more-text">
+            Il peut également améliorer l'humeur, réduire le stress et l'anxiété et augmenter les niveaux d'énergie et la qualité de vie globale.
+            Les exercices cardio peuvent être pratiqués de différentes manières et peuvent être adaptés à un large éventail de niveaux de condition physique et de préférences. Il est important de choisir des activités que vous aimez et qui sont durables pour votre style de vie, et d'augmenter progressivement l'intensité et la durée de vos entraînements au fil du temps afin de continuer à voir des résultats.
+            Dans l'ensemble, l'exercice cardio est un élément important d'une routine de remise en forme bien équilibrée et peut aider les individus à améliorer leur santé et leur bien-être en général.
+        </span> </p>
+        <span class="read-more-btn"  >En Savoir Plus... </span>
         </div>
       </div>
     </div>
   </div>
+</div>
 </section>
 <!-- online classes section end -->
 <!-- Calculate BMI section start -->
@@ -525,7 +539,7 @@ Author: Kamleshyadav
                 <a class="fit_btn active" data-toggle="pill" href="#mensbim" role="tab" aria-controls="mensbim" aria-selected="true">Male</a>
               </li>
               <li>
-                <a class="fit_btn ml-2" data-toggle="pill" href="#womensbim" role="tab" aria-controls="womensbim" aria-selected="false">Female</a>
+                <a class="fit_btn ml-2" data-toggle="pill" href="#womensbim" role="tab" aria-controls="womensbim"  aria-selected="false">Female</a>
               </li>
             </ul>
             <div class="tab-content">
@@ -738,7 +752,7 @@ Author: Kamleshyadav
 <!-- Testimonial section end -->
 <!-- Newsletter section start -->
 <section class="fit_newsletter_wrapper">
-  <div class="container">
+  <div class="container" >
     <div class="row">
       <div class="col-md-6">
         <div class="fit_news_head">
@@ -773,7 +787,7 @@ Author: Kamleshyadav
 <section class="fit_footer_wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-xl-3 col-lg-6">
+      <div class="col-xl-3 col-lg-6" style="margin-left: 10% !important;">
         <div class="fit_footer_box">
           <a href="index.html"><img src="assets/images/logo.png" class="img-fluid" alt="logo" title="logo"></a>
           <p class="footer_about_p">Suivez-nous sur les réseaux sociaux pour rester au courant des dernières actualités, événements et conseils de fitness.</p>
@@ -785,7 +799,7 @@ Author: Kamleshyadav
           </ul>
         </div>
       </div>
-      <div class="col-xl-3 col-lg-6">
+      <div class="col-xl-3 col-lg-6" style="margin-left: 30% !important;">
         <div class="fit_footer_box">
           <h2 class="footer_title underline_title">Contacts</h2>
           <ul class="footer_cntactul">
@@ -829,7 +843,7 @@ Author: Kamleshyadav
 </div>
 <!-- Copyright section end -->
 <!-- go to  top -->
-<a href="javascript:void(0);" id="scroll">Sommet</a>
+<a href="javascript:void(0);" id="scroll"  style="font-size: 75%!important;padding: 0px;">Sommet</a>
 
 
 <!-- js files start -->
@@ -840,6 +854,12 @@ Author: Kamleshyadav
 <script src="assets/js/nice-select.min.js"></script>
 <script src="assets/js/SmoothScroll.min.js"></script>
 <script src="assets/js/custom.js"></script>
-
+<script>
+  $(".nav-tabs li a").click(function(){
+  $(".nav-tabs li a").removeClass("active");
+  $(this).addClass("active");
+});
+</script>
+    <script src="show.js" ></script>
 </body>
 </html>
