@@ -18,3 +18,12 @@
 .read-more-text--show{
     display: inline;
 }
+button {
+    cursor: pointer;
+   
+    background-color: transparent;
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
