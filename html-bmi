@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  <script src="bmi.js"></script>
+    <section class="fit_bmi_wrapper bg_second shap">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-8 col-md-10 col-sm-12 col-12 offset-xl-0 offset-lg-2 offset-md-1">
+        <div class="fit_heading text-center">
+          <h2 class="heading_title">Calculateur De BMI</h2>
+          <p>Notre outil BMI qui permet de calculer le poids idéal d'une personne en fonction de sa taille et de son poids.</p>
+          <p>(Indice de Masse Corporelle)</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-7">
+        <div class="fit_calculate">
+          <h1 class="bmi_title pb-1">Calculez Votre BMI</h1>
+          <p>Le calculateur de BMI est un outil pratique et simple à utiliser pour déterminer rapidement si votre poids est dans une plage considérée comme saine et pour vous aider à maintenir un mode de vie sain.</p>
+          <div class="fit_calculate_tab mt_30">
+            <ul class="nav nav-pills mb_30" role="tablist">
+              <li>
+                <a class="fit_btn active" data-toggle="pill" href="#mensbim" role="tab" aria-controls="mensbim" aria-selected="true">Homme</a>
+              </li>
+              <li>
+                <a class="fit_btn ml-2" data-toggle="pill" href="#womensbim" role="tab" aria-controls="womensbim"  aria-selected="false">Femme</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="mensbim" role="tabpanel" aria-labelledby="mensbim">
+                <form>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                      <div class="fit_form_field mb_30">
+                        <input class="fit_field_inner" type="text" placeholder="Taille / Centimètre" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                      <div class="fit_form_field mb_30">
+                        <input class="fit_field_inner" type="text" placeholder="Poids / Kilogramme " />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                      <div class="fit_form_field mb_30">
+                        <select class="fit_field_inner mb_30">
+                          <option>Age</option>
+                          <option value="1">18+</option>
+                          <option value="2">20+</option>
+                          <option value="3">22+</option>
+                          <option value="4">24+</option>
+                          <option value="5">30+</option>
+                          <option value="6">60+</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                      <div class="fit_form_field mb_30">
+                        <select class="fit_field_inner mb_30">
+                          <option>Sex</option>
+                          <option value="female">Femme</option>
+                          <option value="male">Homme</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12 text-md-right">
+                      <div class="fit_form_field mb_30">
+                        <a href="javascript:void(0);" class="fit_btn btn2">Calculer</a>
+                      </div>
+                    </div>
+                  </div>
+                </form>       
+              </div>
+              <div class="tab-pane fade" id="womensbim" role="tabpanel" aria-labelledby="womensbim">
+                <form>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                      <div class="fit_form_field mb_30">
+                        <input class="fit_field_inner" type="text" placeholder="Taille / Centimètre" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                      <div class="fit_form_field mb_30">
+                        <input class="fit_field_inner" type="text" placeholder="Poids / Kilogramme " />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                      <div class="fit_form_field mb_30">
+                        <select class="fit_field_inner mb_30">
+                          <option>Age</option>
+                          <option value="1">18+</option>
+                          <option value="2">20+</option>
+                          <option value="3">22+</option>
+                          <option value="4">24+</option>
+                          <option value="5">30+</option>
+                          <option value="6">60+</option>
+                          <option value="7">80+</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                      <div class="fit_form_field mb_30">
+                        <select class="fit_field_inner mb_30">
+                          <option>Sex</option>
+                          <option value="female">Femmmes</option>
+                          <option value="male">Hommes</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12 text-md-right ">
+                      <div class="fit_form_field mb_30">
+                        <a href="javascript:void(0);" class="fit_btn btn2">Calculer</a>
+                      </div>
+                    </div>
+                  </div>
+                </form> 
+              </div>
+              <h4 class="fit_totleIBM">Votre BMI : <span class="">18.5</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="fit_bmichart">
+          <h1 class="bmi_title mb_30">BMI Chart</h1>
+          <table class="w-100">
+            <thead>
+              <tr>
+                <th scope="col">Statut de poids</th>
+                <th scope="col">BMI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Poids insuffisant</td>
+                <td>Dessous - 18.5</td>
+              </tr>
+              <tr>
+                <td>Sain</td>
+                <td>18.5 - 24.9</td>
+              </tr>
+              <tr>
+                <td>Surpoids</td>
+                <td>25.0 - 29.9</td>
+              </tr>
+              <tr>
+                <td>Obèse</td>
+                <td>30.0 - Et ci-dessus</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
