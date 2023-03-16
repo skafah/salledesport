@@ -1,0 +1,58 @@
+// get the button element
+const calculateBtn = document.querySelector('.fit_btn');
+
+// add click event listener to the button
+calculateBtn.addEventListener('click', function(event) {
+  // prevent form submission
+  event.preventDefault();
+
+  // get the inputs
+  const heightInput = document.querySelector('input[placeholder="Taille / Centimètre"]');
+  const weightInput = document.querySelector('input[placeholder="Poids / Kilogramme "]');
+  const ageSelect = document.querySelector('select[placeholder="Age"]');
+  const sexSelect = document.querySelector('select[placeholder="Sex"]');
+
+  // get the selected tab
+  const activeTab = document.querySelector('.nav-pills .active');
+
+  // get the appropriate BMI chart based on the selected tab
+  let bmiChart;
+  if (activeTab.getAttribute('href') === '#mensbim') {
+    bmiChart = {
+      underweight: {min: 0, max: 18.4},
+      normal: {min: 18.5, max: 24.9},
+      overweight: {min: 25, max: 29.9},
+      obese: {min: 30, max: Infinity},
+    };
+  } else {
+    bmiChart = {
+      underweight: {min: 0, max: 18.4},
+      normal: {min: 18.5, max: 23.9},
+      overweight: {min: 24, max: 28.9},
+      obese: {min: 29, max: Infinity},
+    };
+  }
+
+  // calculate BMI
+  const height = Number(heightInput.value) / 100; // convert cm to m
+  const weight = Number(weightInput.value);
+  const bmi = weight / (height * height);
+
+  // determine BMI category
+  let category;
+  if (bmi < bmiChart.underweight.max) {
+    category = 'Sous-poids';
+  } else if (bmi < bmiChart.normal.max) {
+    category = 'Poids normal';
+  } else if (bmi < bmiChart.overweight.max) {
+    category = 'Surpoids';
+  } else {
+    category = 'Obésité';
+  }
+
+  // display the result
+  const resultDiv = document.createElement('div');
+  resultDiv.innerHTML = `Votre IMC est ${bmi.toFixed(2)} (${category}).`;
+  const form = activeTab.querySelector('form');
+  form.appendChild(resultDiv);
+});
