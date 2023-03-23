@@ -534,26 +534,18 @@ Author: Kamleshyadav
           <h1 class="bmi_title pb-1">Calculator Your BMI</h1>
           <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
           <div class="fit_calculate_tab mt_30">
-            <ul class="nav nav-pills mb_30" role="tablist">
-              <li>
-                <a class="fit_btn active" data-toggle="pill" href="#mensbim" role="tab" aria-controls="mensbim" aria-selected="true">Male</a>
-              </li>
-              <li>
-                <a class="fit_btn ml-2" data-toggle="pill" href="#womensbim" role="tab" aria-controls="womensbim"  aria-selected="false">Female</a>
-              </li>
-            </ul>
             <div class="tab-content">
               <div class="tab-pane fade show active" id="mensbim" role="tabpanel" aria-labelledby="mensbim">
                 <form>
                   <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                       <div class="fit_form_field mb_30">
-                        <input class="fit_field_inner" type="text" placeholder="Height / Centimetre" />
+                        <input class="fit_field_inner" id="height" type="text" placeholder="Height / Centimetre" />
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                       <div class="fit_form_field mb_30">
-                        <input class="fit_field_inner" type="text" placeholder="Weight / Kilogram " />
+                        <input class="fit_field_inner" id="weight" type="text" placeholder="Weight / Kilogram " />
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 col-12">
@@ -569,68 +561,16 @@ Author: Kamleshyadav
                         </select>
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                      <div class="fit_form_field mb_30">
-                        <select class="fit_field_inner mb_30">
-                          <option>Sex</option>
-                          <option value="female">Femmes</option>
-                          <option value="male">Hommes</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-12 text-md-right">
-                      <div class="fit_form_field mb_30">
-                        <a href="javascript:void(0);" class="fit_btn btn2">Calculate</a>
-                      </div>
-                    </div>
-                  </div>
-                </form>       
-              </div>
-              <div class="tab-pane fade" id="womensbim" role="tabpanel" aria-labelledby="womensbim">
-                <form>
-                  <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                      <div class="fit_form_field mb_30">
-                        <input class="fit_field_inner" type="text" placeholder="Height / Centimetre" />
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                      <div class="fit_form_field mb_30">
-                        <input class="fit_field_inner" type="text" placeholder="Weight / Kilogram " />
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                      <div class="fit_form_field mb_30">
-                        <select class="fit_field_inner mb_30">
-                          <option>Age</option>
-                          <option value="1">18+</option>
-                          <option value="2">20+</option>
-                          <option value="3">22+</option>
-                          <option value="4">24+</option>
-                          <option value="5">30+</option>
-                          <option value="6">60+</option>
-                          <option value="7">80+</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                      <div class="fit_form_field mb_30">
-                        <select class="fit_field_inner mb_30">
-                          <option>Sex</option>
-                          <option value="female">Femmmes</option>
-                          <option value="male">Hommes</option>
-                        </select>
-                      </div>
-                    </div>
+                 
                     <div class="col-lg-4 col-md-12 col-sm-12 col-12 text-md-right ">
                       <div class="fit_form_field mb_30">
-                        <a href="javascript:void(0);" class="fit_btn btn2">Calculer</a>
+                        <a href="javascript:void(0);" class="fit_btn btn2" onclick="calculateBMI()">Calculer</a>
                       </div>
                     </div>
                   </div>
                 </form> 
               </div>
-              <h4 class="fit_totleIBM">Votre BMI : <span class="">18.5</span></h4>
+              <h4 class="fit_totleIBM">Votre BMI : <span id="result">18.5</span></h4>
             </div>
           </div>
         </div>
@@ -861,5 +801,7 @@ Author: Kamleshyadav
 });
 </script>
     <script src="show.js" ></script>
+    <script src="BMI.js" ></script>
+    
 </body>
 </html>
