@@ -28,6 +28,7 @@ Author: Kamleshyadav
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/readmore.css">
 </head>
 <body>
 <!-- preloader start -->
@@ -67,11 +68,8 @@ Author: Kamleshyadav
           <div class="fit_nav_items main_menu_wrapper text-right">
             <ul>
               <li class="mobile_logo"><a href="javascript:void(0);"><img src="assets/images/logo.png" class="img-fluid" alt="logo" title="logo"></a></li>
-              <li class="active"><a href="index.html">Accueil</a></li>
-              <li><a href="about.html">À Propos De Nous</a></li>
-              <li><a href="classes.html">Nos Classes</a></li>
-              <li><a href="trainer.html">Entraîneurs</a></li>
-              <li><a href="contact.html">Nous Contacter</a></li>
+              <li class="active"><a href="Accueil.html">Accueil</a></li>
+              <li><a href="Nous Contacter.html">Nous Contacter</a></li>
             </ul>
           </div>
           <div class="fit_search_wrapper menu_btn_wrap">
@@ -109,8 +107,7 @@ Author: Kamleshyadav
           <h1>vous n'échouez que lorsque vous arrêtez d'essayer</h1>
           <h2>prêt à change votre physique?</h2>
           <div class="banner_btn_wrap">
-            <a href="javascript:void(0);" class="fit_btn">En Savoir Plus</a>
-            <a href="javascript:void(0);" class="fit_btn btn2">Rejoindre Maintenant</a>
+            <a href="#NOUS" class="fit_btn btn2">En Savoir Plus</a>
           </div>
         </div>
       </div>
@@ -122,17 +119,17 @@ Author: Kamleshyadav
   <!-- Work time section start -->
   <section class="fit_worktime_wrapper">
     <div class="container">
-        <ul class="nav nav-pills" id="pills-tab" role="tablist">
-          <li>
-            <a class="active" data-toggle="pill" href="#mensclass" role="tab" aria-controls="mensclass" aria-selected="true">Classes Pour Hommes</a>
+        <ul class="nav nav-tabs" id="pills-tab" role="tablist">
+          <li class="nav active">
+            <a class="nav  active " data-toggle="pill" onclick="myFunction1()" role="tab" aria-controls="mensclass" aria-selected="true">Classes Pour Hommes</a>
           </li>
           <li>
-            <a data-toggle="pill" href="#womenclass" role="tab" aria-controls="womenclass" aria-selected="false">Classes Pour Femmes</a>
+            <a onclick="myFunction2()" data-toggle="pill"  role="tab" aria-controls="womenclass" aria-selected="false">Classes Pour Femmes</a>
           </li>
         </ul>
-        <div class="worktime_inner">
-          <div class="tab-content">
-            <div class="tab-pane fade show active" id="mensclass" role="tabpanel" aria-labelledby="mensclass">
+        <div class="worktime_inner" >
+          <div class="tab-content" >
+            <div class="tab-pane  show active" id="menclass" role="tabpanel" aria-labelledby="mensclass">
               <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12">
                   <div class="fit_worktime_box">
@@ -162,12 +159,12 @@ Author: Kamleshyadav
                       <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="38px" height="51px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M37.537,14.033 L35.755,15.642 C36.150,16.019 36.367,16.573 36.286,17.154 C36.153,18.119 35.260,18.790 34.299,18.657 L33.043,18.484 C30.903,21.161 29.414,24.300 28.696,27.660 C28.230,25.724 28.049,23.737 28.150,21.760 C28.756,20.484 29.472,19.262 30.291,18.106 L29.664,18.020 C29.967,17.144 29.909,16.185 29.510,15.353 L29.830,14.490 L32.978,14.924 C33.556,14.347 33.720,14.210 35.932,12.213 C36.477,11.720 37.349,11.814 37.769,12.456 C38.098,12.958 37.982,13.630 37.537,14.033 ZM28.519,14.116 C27.882,13.613 27.071,13.328 26.209,13.359 L26.823,11.701 C27.056,11.073 27.754,10.751 28.384,10.985 C29.013,11.216 29.334,11.912 29.102,12.541 L28.519,14.116 ZM26.134,15.125 C27.167,15.010 28.091,15.810 28.093,16.878 C28.095,17.781 27.380,18.526 26.481,18.627 L19.527,19.406 C18.931,19.471 18.354,19.233 17.980,18.789 L13.698,13.697 C13.969,14.271 16.089,18.771 16.374,19.376 L15.535,21.399 L18.892,22.024 C19.979,22.226 20.726,23.230 20.607,24.326 L19.443,35.059 C19.325,36.141 18.408,36.943 17.342,36.943 C16.083,36.943 15.101,35.856 15.236,34.606 L16.190,25.815 C8.210,24.330 8.614,24.447 8.199,24.219 C6.955,23.748 6.425,22.226 6.957,20.827 C7.449,19.535 10.477,11.583 10.862,10.571 C11.399,9.162 12.864,8.410 14.064,8.940 C18.003,10.678 24.531,13.535 24.531,13.535 L20.092,14.032 C18.352,12.809 17.190,11.992 16.398,11.436 L20.074,15.804 L26.134,15.125 ZM17.367,8.281 C15.646,7.388 14.844,5.320 15.515,3.503 C16.329,1.300 18.883,0.315 20.971,1.398 C22.692,2.292 23.494,4.359 22.822,6.175 C22.008,8.378 19.455,9.363 17.367,8.281 ZM8.422,30.938 L7.925,25.944 C8.321,26.086 8.207,26.048 12.108,26.774 L12.524,30.954 C12.552,31.229 12.523,31.509 12.438,31.774 L11.220,35.590 L13.688,35.918 C13.933,36.738 14.455,37.457 15.158,37.948 C14.108,37.897 13.585,38.602 13.552,39.277 C13.515,40.052 14.114,40.711 14.892,40.749 C15.401,40.774 19.269,40.960 19.856,40.988 C20.669,41.029 21.373,40.362 21.331,39.510 C21.296,38.782 20.684,38.214 19.955,38.179 L19.204,38.143 C19.797,37.809 20.242,37.368 20.576,36.831 L25.073,37.428 L25.445,34.010 L26.878,37.667 L28.419,37.871 L26.026,31.767 C24.625,28.195 24.094,24.383 24.431,20.626 C26.922,20.347 26.776,20.365 26.901,20.345 C26.502,23.891 26.964,27.506 28.288,30.883 L31.306,38.580 C32.006,38.993 32.585,39.587 32.981,40.298 C33.346,40.953 33.555,41.708 33.555,42.512 C33.555,44.641 32.095,46.429 30.119,46.936 L32.471,49.318 C32.848,49.700 32.843,50.314 32.461,50.690 C32.078,51.065 31.463,51.060 31.087,50.678 L27.699,47.248 C27.699,47.248 8.809,50.161 7.666,50.161 C6.384,50.161 5.177,49.845 4.115,49.290 L2.718,50.684 C2.305,51.097 1.613,51.060 1.249,50.575 C0.958,50.186 1.021,49.635 1.366,49.292 L2.498,48.161 C0.963,46.763 -0.000,44.750 -0.000,42.512 C-0.000,38.456 3.164,35.140 7.164,34.882 L8.422,30.938 ZM3.090,42.275 C2.953,44.987 5.186,47.215 7.904,47.077 C10.232,46.959 12.123,45.073 12.241,42.750 C12.379,40.038 10.146,37.810 7.428,37.947 C5.100,38.065 3.208,39.952 3.090,42.275 Z"/></svg>
                     </span>
                     <h2>Cours collectifs</h2>
-                    <p>Jours de la semaine: 18:00 – 20:00</p>
+                    <p>Jours de la semaine: 14:00 – 18:00</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="womenclass" role="tabpanel" aria-labelledby="womenclass">
+            <div class="tab-pane " id="womenclass" role="tabpanel" aria-labelledby="womenclass">
               <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-12">
                   <div class="fit_worktime_box">
@@ -176,7 +173,7 @@ Author: Kamleshyadav
                         d="M77.924,37.777 L70.082,38.742 L76.543,43.648 C78.086,44.821 78.393,47.029 77.227,48.581 C76.062,50.132 73.866,50.442 72.323,49.268 C57.805,38.246 58.761,39.017 58.405,38.599 L66.365,32.648 C66.993,32.178 67.502,31.892 67.742,31.097 L70.553,21.787 L65.818,29.972 C65.619,30.315 65.353,30.614 65.036,30.851 L54.604,38.650 C53.310,39.617 51.482,39.346 50.521,38.046 C49.560,36.745 49.829,34.908 51.122,33.940 L61.074,26.500 L65.508,18.836 L62.901,21.599 L62.579,20.502 C61.810,17.885 63.312,15.137 65.922,14.387 L70.244,13.144 C72.855,12.393 75.577,13.930 76.298,16.564 C80.041,30.230 80.288,31.139 80.804,33.125 C81.539,35.258 80.126,37.504 77.924,37.777 ZM61.062,12.952 C57.505,12.952 54.621,10.053 54.621,6.476 C54.621,2.899 57.505,-0.002 61.062,-0.002 C64.619,-0.002 67.503,2.899 67.503,6.476 C67.503,10.053 64.619,12.952 61.062,12.952 ZM54.824,41.078 L57.731,43.925 C59.122,45.287 59.152,47.526 57.797,48.926 C56.443,50.325 54.216,50.355 52.825,48.992 L39.963,36.398 L23.814,47.340 C22.282,48.379 20.339,48.593 18.619,47.912 C16.899,47.232 15.622,45.744 15.204,43.934 L11.097,26.131 L13.713,26.767 L1.314,19.530 C0.637,19.135 0.169,18.458 0.038,17.684 C-0.094,16.908 0.123,16.113 0.631,15.514 L7.025,7.981 C6.853,9.040 6.886,10.133 7.132,11.211 C7.392,12.344 7.886,13.406 8.570,14.331 L6.696,16.538 L16.067,21.942 L12.620,18.856 L22.286,16.385 L26.973,9.314 L23.581,9.061 C23.563,8.525 23.494,7.986 23.371,7.450 C23.038,5.993 22.316,4.652 21.302,3.573 L31.868,4.360 C32.804,4.430 33.632,4.993 34.043,5.841 C34.455,6.688 34.388,7.691 33.868,8.476 L25.933,20.446 L29.650,34.869 L38.398,28.927 C39.779,27.989 41.625,28.155 42.819,29.323 L48.057,34.452 C47.454,36.048 47.646,37.910 48.734,39.381 C50.169,41.322 52.698,41.961 54.824,41.078 ZM15.252,15.468 C11.882,15.468 9.150,12.720 9.150,9.330 C9.150,5.941 11.882,3.193 15.252,3.193 C18.623,3.193 21.355,5.941 21.355,9.330 C21.355,12.720 18.623,15.468 15.252,15.468 Z"/></svg>
                     </span>
                     <h2>Entraîneur Personnel</h2>
-                    <p>Jours de la semaine: 10:00 – 22:00</p>
+                    <p>Jours de la semaine: 08:00 – 22:00</p>
                     <p>Samedi: 10:00 – 18:00</p>
                   </div>
                 </div>
@@ -197,7 +194,7 @@ Author: Kamleshyadav
                       <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="38px" height="51px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M37.537,14.033 L35.755,15.642 C36.150,16.019 36.367,16.573 36.286,17.154 C36.153,18.119 35.260,18.790 34.299,18.657 L33.043,18.484 C30.903,21.161 29.414,24.300 28.696,27.660 C28.230,25.724 28.049,23.737 28.150,21.760 C28.756,20.484 29.472,19.262 30.291,18.106 L29.664,18.020 C29.967,17.144 29.909,16.185 29.510,15.353 L29.830,14.490 L32.978,14.924 C33.556,14.347 33.720,14.210 35.932,12.213 C36.477,11.720 37.349,11.814 37.769,12.456 C38.098,12.958 37.982,13.630 37.537,14.033 ZM28.519,14.116 C27.882,13.613 27.071,13.328 26.209,13.359 L26.823,11.701 C27.056,11.073 27.754,10.751 28.384,10.985 C29.013,11.216 29.334,11.912 29.102,12.541 L28.519,14.116 ZM26.134,15.125 C27.167,15.010 28.091,15.810 28.093,16.878 C28.095,17.781 27.380,18.526 26.481,18.627 L19.527,19.406 C18.931,19.471 18.354,19.233 17.980,18.789 L13.698,13.697 C13.969,14.271 16.089,18.771 16.374,19.376 L15.535,21.399 L18.892,22.024 C19.979,22.226 20.726,23.230 20.607,24.326 L19.443,35.059 C19.325,36.141 18.408,36.943 17.342,36.943 C16.083,36.943 15.101,35.856 15.236,34.606 L16.190,25.815 C8.210,24.330 8.614,24.447 8.199,24.219 C6.955,23.748 6.425,22.226 6.957,20.827 C7.449,19.535 10.477,11.583 10.862,10.571 C11.399,9.162 12.864,8.410 14.064,8.940 C18.003,10.678 24.531,13.535 24.531,13.535 L20.092,14.032 C18.352,12.809 17.190,11.992 16.398,11.436 L20.074,15.804 L26.134,15.125 ZM17.367,8.281 C15.646,7.388 14.844,5.320 15.515,3.503 C16.329,1.300 18.883,0.315 20.971,1.398 C22.692,2.292 23.494,4.359 22.822,6.175 C22.008,8.378 19.455,9.363 17.367,8.281 ZM8.422,30.938 L7.925,25.944 C8.321,26.086 8.207,26.048 12.108,26.774 L12.524,30.954 C12.552,31.229 12.523,31.509 12.438,31.774 L11.220,35.590 L13.688,35.918 C13.933,36.738 14.455,37.457 15.158,37.948 C14.108,37.897 13.585,38.602 13.552,39.277 C13.515,40.052 14.114,40.711 14.892,40.749 C15.401,40.774 19.269,40.960 19.856,40.988 C20.669,41.029 21.373,40.362 21.331,39.510 C21.296,38.782 20.684,38.214 19.955,38.179 L19.204,38.143 C19.797,37.809 20.242,37.368 20.576,36.831 L25.073,37.428 L25.445,34.010 L26.878,37.667 L28.419,37.871 L26.026,31.767 C24.625,28.195 24.094,24.383 24.431,20.626 C26.922,20.347 26.776,20.365 26.901,20.345 C26.502,23.891 26.964,27.506 28.288,30.883 L31.306,38.580 C32.006,38.993 32.585,39.587 32.981,40.298 C33.346,40.953 33.555,41.708 33.555,42.512 C33.555,44.641 32.095,46.429 30.119,46.936 L32.471,49.318 C32.848,49.700 32.843,50.314 32.461,50.690 C32.078,51.065 31.463,51.060 31.087,50.678 L27.699,47.248 C27.699,47.248 8.809,50.161 7.666,50.161 C6.384,50.161 5.177,49.845 4.115,49.290 L2.718,50.684 C2.305,51.097 1.613,51.060 1.249,50.575 C0.958,50.186 1.021,49.635 1.366,49.292 L2.498,48.161 C0.963,46.763 -0.000,44.750 -0.000,42.512 C-0.000,38.456 3.164,35.140 7.164,34.882 L8.422,30.938 ZM3.090,42.275 C2.953,44.987 5.186,47.215 7.904,47.077 C10.232,46.959 12.123,45.073 12.241,42.750 C12.379,40.038 10.146,37.810 7.428,37.947 C5.100,38.065 3.208,39.952 3.090,42.275 Z"/></svg>
                     </span>
                     <h2>Cours collectifs</h2>
-                    <p>Jours de la semaine: 18:00 – 20:00</p>
+                    <p>Jours de la semaine: 16:00 – 20:00</p>
                   </div>
                 </div>
               </div>
@@ -213,7 +210,7 @@ Author: Kamleshyadav
       <div class="row">
         <div class="col-xl-12 col-lg-8 col-md-10 col-sm-12 col-12 offset-xl-0 offset-lg-2 offset-md-1">
           <div class="fit_heading text-center">
-            <h2 class="heading_title">À Propos De Nous</h2>
+            <h2 class="heading_title " id="NOUS">À Propos De Nous</h2>
             <p>Fit Club a été fondé en 2010 par des passionnés de fitness, John et Jane Smith. Après de nombreuses années de lutte pour trouver une salle de sport proposant une gamme complète d'équipements et de cours, ils ont décidé de créer leur propre centre de fitness.</p>
           </div>
         </div>
@@ -226,12 +223,17 @@ Author: Kamleshyadav
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="about_inner_slider">
-                    <img src="assets/images/about_slid2.jpg" class="img-fluid" alt="image">
+                    <img src="assets/images/propos_slide/01.jpg" class="img-fluid" alt="image">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="about_inner_slider">
-                    <img src="assets/images/about_slid2.jpg" class="img-fluid" alt="image">
+                    <img src="assets/images/propos_slide/02.jpg" class="img-fluid" alt="image">
+                  </div>
+                </div>
+               <div class="swiper-slide">
+                <div class="about_inner_slider">
+                 <img src="assets/images/propos_slide/03.jpg" class="img-fluid" alt="image">
                   </div>
                 </div>
               </div>
@@ -255,7 +257,6 @@ Author: Kamleshyadav
                     John et Jane pensaient que tout le monde pouvait bénéficier de l'exercice, quel que soit son niveau de forme physique ou son expérience.
                     Ils ont travaillé dur pour créer une culture d'inclusion et de soutien, où les membres se sentaient à l'aise de demander de l'aide et
                     les encouragements des formateurs et des autres membres.</p>
-            <a href="javascript:void(0);" class="fit_btn">En Savoir Plus</a>
           </div>
         </div>
       </div>
@@ -341,7 +342,7 @@ Author: Kamleshyadav
               <div class="swiper-slide">
                 <div class="trainer_inner_slider">
                   <div class="inner_slider_img">
-                    <img src="assets/images/trainer/fit_trainer01.jpg" class="img-fluid" alt="image">
+                    <img src="assets/images/trainer/fit_trainer08.jpg" class="img-fluid" alt="image">
                       <div class="trainer_data">
                         <h2>Conditionnement Physique</h2>
                         <p>Entraîneur personnel certifié (EPC), spécialiste certifié en force et conditionnement (SCFC).</p>
@@ -360,7 +361,7 @@ Author: Kamleshyadav
               <div class="swiper-slide">
                 <div class="trainer_inner_slider">
                   <div class="inner_slider_img">
-                    <img src="assets/images/trainer/fit_trainer02.jpg" class="img-fluid" alt="image">
+                    <img src="assets/images/trainer/fit_trainer06.jpg" class="img-fluid" alt="image">
                       <div class="trainer_data">
                         <h2>Boxe</h2>
                         <p>Entraîneur de boxe certifié, entraîneur de boxe niveau 2.</p>
@@ -379,7 +380,7 @@ Author: Kamleshyadav
               <div class="swiper-slide">
                 <div class="trainer_inner_slider">
                   <div class="inner_slider_img">
-                    <img src="assets/images/trainer/fit_trainer03.jpg" class="img-fluid" alt="image">
+                    <img src="assets/images/trainer/fit_trainer04.jpg" class="img-fluid" alt="image">
                       <div class="trainer_data">
                         <h2>Professeure De Yoga</h2>
                         <p>Professeure de yoga certifiée et enregistrée (RYT 200), Yoga Alliance.</p>
@@ -398,7 +399,7 @@ Author: Kamleshyadav
               <div class="swiper-slide">
                 <div class="trainer_inner_slider">
                   <div class="inner_slider_img">
-                    <img src="assets/images/trainer/fit_trainer02.jpg" class="img-fluid" alt="image">
+                    <img src="assets/images/trainer/fit_trainer05.jpg" class="img-fluid" alt="image">
                       <div class="trainer_data">
                         <h2>Musculation</h2>
                         <p>Spécialiste certifié en force et conditionnement (SCFC), entraîneur d'haltérophilie de niveau 2.</p>
@@ -440,6 +441,7 @@ Author: Kamleshyadav
         </div>
       </div>
     </div>
+    <div class="read-more-container">
     <div class="row">
       <div class="col-lg-6 col-md-12">
         <div class="fit_onclass_video">
@@ -449,28 +451,37 @@ Author: Kamleshyadav
             </a>
         </div>
       </div>
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-6 col-md-12 ">
         <div class="fit_onclass_data">
-          <h1 class="about_heading">Fitness</h1>
-          <p class="onclass_pera">La forme physique fait référence à un état de bien-être physique et mental qui est atteint grâce à une activité physique régulière, une alimentation saine et un mode de vie équilibré. Il englobe de nombreux aspects différents de la santé, notamment l'endurance cardiovasculaire, la force et l'endurance musculaires, la flexibilité et la composition corporelle.</p>
-          <p>Le maintien d'un haut niveau de forme physique présente de nombreux avantages, notamment la réduction du risque de maladies chroniques telles que les maladies cardiaques, le diabète et l'obésité. Il peut également améliorer les niveaux d'énergie, stimuler l'humeur et la clarté mentale et améliorer la qualité de vie globale.</p>
-          <p>Il existe de nombreuses façons d'atteindre et de maintenir la forme physique, notamment en participant à des sports, en pratiquant une activité physique régulière comme la course ou la natation, en soulevant des poids, en faisant du yoga ou du Pilates, et plus encore. Il est important de choisir des activités que vous aimez et qui sont durables pour votre style de vie, ainsi que de suivre une alimentation saine et des habitudes de vie qui favorisent votre santé et votre bien-être en général.</p>
-          <p>Dans l'ensemble, la forme physique est un aspect important de la santé et du bien-être en général et peut aider les individus à vivre une vie plus heureuse et plus saine.</p>
-          <a href="javascript:void(0);" class="read_more">En Savoir Plus <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="4px" height="8px"><path fill-rule="evenodd" fill="rgb(240, 87, 32)" d="M4.000,3.989 C4.000,4.131 3.952,4.275 3.856,4.384 L0.835,7.817 C0.642,8.035 0.331,8.035 0.139,7.817 C-0.053,7.599 -0.053,7.245 0.139,7.026 L2.812,3.989 L0.139,0.951 C-0.053,0.733 -0.053,0.378 0.139,0.161 C0.331,-0.058 0.643,-0.058 0.835,0.161 L3.856,3.594 C3.952,3.703 4.000,3.846 4.000,3.989 Z"/></svg></a>
-        </div>
+          <h1 class="about_heading " >Fitness</h1>
+          <p class="onclass_pera ">La forme physique fait référence à un état de bien-être physique et mental qui est atteint grâce à une activité physique régulière, une alimentation saine et un mode de vie équilibré. Il englobe de nombreux aspects différents de la santé, notamment l'endurance cardiovasculaire, la force et l'endurance musculaires, la flexibilité et la composition corporelle.
+            Le maintien d'un haut niveau de forme physique présente de nombreux avantages, notamment la réduction du risque de maladies chroniques telles que les maladies cardiaques, le diabète et l'obésité. Il peut également améliorer les niveaux d'énergie, stimuler l'humeur et la clarté mentale et améliorer la qualité de vie globale.
+          <span class="read-more-text">
+       
+            Il existe de nombreuses façons d'atteindre et de maintenir la forme physique, notamment en participant à des sports, en pratiquant une activité physique régulière comme la course ou la natation, en soulevant des poids, en faisant du yoga ou du Pilates, et plus encore. Il est important de choisir des activités que vous aimez et qui sont durables pour votre style de vie, ainsi que de suivre une alimentation saine et des habitudes de vie qui favorisent votre santé et votre bien-être en général.
+          Dans l'ensemble, la forme physique est un aspect important de la santé et du bien-être en général et peut aider les individus à vivre une vie plus heureuse et plus saine.
+        </span> </p>
+          
+        <button class="read-more-btn fit_btn btn2" >En Savoir Plus... </button>
+        
       </div>
     </div>
+    
     <div class="row">
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-6 col-md-12 ">
         <div class="fit_onclass_data">
           <h1 class="about_heading">Yoga</h1>
-          <p class="onclass_pera">Le yoga est une pratique physique, mentale et spirituelle qui trouve son origine dans l'Inde ancienne. Il combine une série de postures avec des techniques de respiration contrôlée et de méditation pour favoriser la force physique, la flexibilité et la relaxation, ainsi que la clarté mentale et le bien-être émotionnel.</p>
-          <p>Il existe de nombreux styles de yoga différents, chacun avec son propre objectif et sa propre approche. Certains styles populaires incluent le Hatha yoga, le Vinyasa yoga, le Bikram yoga et l'Ashtanga yoga.</p>
-          <p>Le yoga est une forme d'exercice à faible impact accessible aux personnes de tous âges et de tous niveaux de forme physique. Cela peut aider à améliorer la santé et la forme physique en général, à réduire le stress et l'anxiété et à augmenter la pleine conscience et la conscience de soi.</p>
-          <p>Le yoga n'est pas seulement une pratique physique, mais un mode de vie qui met l'accent sur l'interdépendance de l'esprit, du corps et de l'esprit. La pratique du yoga peut aider à cultiver un sentiment de paix intérieure et d'équilibre, et peut être un outil puissant pour promouvoir la santé et le bien-être en général.</p>
-          <a href="javascript:void(0);" class="read_more">En Savoir Plus <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="4px" height="8px"><path fill-rule="evenodd" fill="rgb(240, 87, 32)" d="M4.000,3.989 C4.000,4.131 3.952,4.275 3.856,4.384 L0.835,7.817 C0.642,8.035 0.331,8.035 0.139,7.817 C-0.053,7.599 -0.053,7.245 0.139,7.026 L2.812,3.989 L0.139,0.951 C-0.053,0.733 -0.053,0.378 0.139,0.161 C0.331,-0.058 0.643,-0.058 0.835,0.161 L3.856,3.594 C3.952,3.703 4.000,3.846 4.000,3.989 Z"/></svg></a>
-        </div>
+          <p class="onclass_pera">Le yoga est une pratique physique, mentale et spirituelle qui trouve son origine dans l'Inde ancienne. Il combine une série de postures avec des techniques de respiration contrôlée et de méditation pour favoriser la force physique, la flexibilité et la relaxation, ainsi que la clarté mentale et le bien-être émotionnel.
+          Il existe de nombreux styles de yoga différents, chacun avec son propre objectif et sa propre approche. Certains styles populaires incluent le Hatha yoga, le Vinyasa yoga, le Bikram yoga et l'Ashtanga yoga.
+          <span class="read-more-text">
+       
+            Le yoga est une forme d'exercice à faible impact accessible aux personnes de tous âges et de tous niveaux de forme physique. Cela peut aider à améliorer la santé et la forme physique en général, à réduire le stress et l'anxiété et à augmenter la pleine conscience et la conscience de soi.
+            Le yoga n'est pas seulement une pratique physique, mais un mode de vie qui met l'accent sur l'interdépendance de l'esprit, du corps et de l'esprit. La pratique du yoga peut aider à cultiver un sentiment de paix intérieure et d'équilibre, et peut être un outil puissant pour promouvoir la santé et le bien-être en général.
+        </span> </p>
+        <button class="read-more-btn fit_btn btn2" >En Savoir Plus... </button>
+        
       </div>
+    </div>
       <div class="col-lg-6 col-md-12">
         <div class="fit_onclass_video">
           <img src="assets/images/online_class2.jpg" class="img-fluid" alt="image" >
@@ -481,7 +492,7 @@ Author: Kamleshyadav
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-6 col-md-12 ">
         <div class="fit_onclass_video">
           <img src="assets/images/online_class3.jpg" class="img-fluid" alt="image" >
             <a href="https://www.youtube.com/embed/8lQzkwqhKTk" rel="external" class="video_btn video_popup" title="title">
@@ -489,18 +500,21 @@ Author: Kamleshyadav
             </a>
         </div>
       </div>
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-6 col-md-12 ">
         <div class="fit_onclass_data">
           <h1 class="about_heading">Cardio</h1>
-          <p class="onclass_pera">L'exercice cardiovasculaire, également connu sous le nom de cardio, fait référence à toute forme d'activité physique qui élève la fréquence cardiaque et augmente la circulation, dans le but d'améliorer la santé et l'endurance cardiovasculaires. Les formes courantes de cardio comprennent la course, le vélo, la natation, le saut à la corde et l'entraînement par intervalles à haute intensité.</p>
-          <p>L'exercice cardio est important pour maintenir un cœur et un système circulatoire en bonne santé, et présente également de nombreux autres avantages pour la santé. Des exercices cardiovasculaires réguliers peuvent aider à réduire le risque de maladie cardiaque, d'accident vasculaire cérébral et d'autres maladies chroniques, ainsi qu'à améliorer la capacité pulmonaire, à stimuler le métabolisme et à favoriser la perte de poids. Il peut également améliorer l'humeur, réduire le stress et l'anxiété et augmenter les niveaux d'énergie et la qualité de vie globale.</p>
-          <p>Les exercices cardio peuvent être pratiqués de différentes manières et peuvent être adaptés à un large éventail de niveaux de condition physique et de préférences. Il est important de choisir des activités que vous aimez et qui sont durables pour votre style de vie, et d'augmenter progressivement l'intensité et la durée de vos entraînements au fil du temps afin de continuer à voir des résultats.</p>
-          <p>Dans l'ensemble, l'exercice cardio est un élément important d'une routine de remise en forme bien équilibrée et peut aider les individus à améliorer leur santé et leur bien-être en général.</p>
-          <a href="javascript:void(0);" class="read_more">En Savoir Plus <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="4px" height="8px"><path fill-rule="evenodd" fill="rgb(240, 87, 32)" d="M4.000,3.989 C4.000,4.131 3.952,4.275 3.856,4.384 L0.835,7.817 C0.642,8.035 0.331,8.035 0.139,7.817 C-0.053,7.599 -0.053,7.245 0.139,7.026 L2.812,3.989 L0.139,0.951 C-0.053,0.733 -0.053,0.378 0.139,0.161 C0.331,-0.058 0.643,-0.058 0.835,0.161 L3.856,3.594 C3.952,3.703 4.000,3.846 4.000,3.989 Z"/></svg></a>
+          <p class="onclass_pera">L'exercice cardiovasculaire, également connu sous le nom de cardio, fait référence à toute forme d'activité physique qui élève la fréquence cardiaque et augmente la circulation, dans le but d'améliorer la santé et l'endurance cardiovasculaires. Les formes courantes de cardio comprennent la course, le vélo, la natation, le saut à la corde et l'entraînement par intervalles à haute intensité.
+          L'exercice cardio est important pour maintenir un cœur et un système circulatoire en bonne santé, et présente également de nombreux autres avantages pour la santé. Des exercices cardiovasculaires réguliers peuvent aider à réduire le risque de maladie cardiaque, d'accident vasculaire cérébral et d'autres maladies chroniques, ainsi qu'à améliorer la capacité pulmonaire, à stimuler le métabolisme et à favoriser la perte de poids.<span class="read-more-text">
+            Il peut également améliorer l'humeur, réduire le stress et l'anxiété et augmenter les niveaux d'énergie et la qualité de vie globale.
+            Les exercices cardio peuvent être pratiqués de différentes manières et peuvent être adaptés à un large éventail de niveaux de condition physique et de préférences. Il est important de choisir des activités que vous aimez et qui sont durables pour votre style de vie, et d'augmenter progressivement l'intensité et la durée de vos entraînements au fil du temps afin de continuer à voir des résultats.
+            Dans l'ensemble, l'exercice cardio est un élément important d'une routine de remise en forme bien équilibrée et peut aider les individus à améliorer leur santé et leur bien-être en général.
+        </span> </p>
+        <button class="read-more-btn fit_btn btn2" >En Savoir Plus... </button>
         </div>
       </div>
     </div>
   </div>
+</div>
 </section>
 <!-- online classes section end -->
 <!-- Calculate BMI section start -->
@@ -510,36 +524,28 @@ Author: Kamleshyadav
       <div class="col-xl-12 col-lg-8 col-md-10 col-sm-12 col-12 offset-xl-0 offset-lg-2 offset-md-1">
         <div class="fit_heading text-center">
           <h2 class="heading_title">Calculator Your BMI</h2>
-          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <p>Le BMI également connu sous le nom d'IMC (Indice de Masse Corporelle), est un indice qui permet d'estimer la corpulence d'une personne en se basant sur sa taille et son poids.</p>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-7">
         <div class="fit_calculate">
-          <h1 class="bmi_title pb-1">Calculator Your BMI</h1>
-          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <h1 class="bmi_title pb-1">Calculer Votre BMI</h1>
+          <p>Pour calculater votre BMI, il suffit de saisir Votre taille en centimètres et votre poids en kilogrammes dans les champs correspondants, choisissez ainsi votre age, puis de cliquer sur le bouton Calculer.</p>
           <div class="fit_calculate_tab mt_30">
-            <ul class="nav nav-pills mb_30" role="tablist">
-              <li>
-                <a class="fit_btn active" data-toggle="pill" href="#mensbim" role="tab" aria-controls="mensbim" aria-selected="true">Male</a>
-              </li>
-              <li>
-                <a class="fit_btn ml-2" data-toggle="pill" href="#womensbim" role="tab" aria-controls="womensbim" aria-selected="false">Female</a>
-              </li>
-            </ul>
             <div class="tab-content">
               <div class="tab-pane fade show active" id="mensbim" role="tabpanel" aria-labelledby="mensbim">
                 <form>
                   <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                       <div class="fit_form_field mb_30">
-                        <input class="fit_field_inner" type="text" placeholder="Height / Centimetre" />
+                        <input class="fit_field_inner" id="height" type="text" placeholder="Taille / Centimètre" />
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                       <div class="fit_form_field mb_30">
-                        <input class="fit_field_inner" type="text" placeholder="Weight / Kilogram " />
+                        <input class="fit_field_inner" id="weight" type="text" placeholder="Poids / Kilogramme " />
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 col-12">
@@ -555,98 +561,46 @@ Author: Kamleshyadav
                         </select>
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                      <div class="fit_form_field mb_30">
-                        <select class="fit_field_inner mb_30">
-                          <option>Sex</option>
-                          <option value="female">Femmes</option>
-                          <option value="male">Hommes</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-12 text-md-right">
-                      <div class="fit_form_field mb_30">
-                        <a href="javascript:void(0);" class="fit_btn btn2">Calculate</a>
-                      </div>
-                    </div>
-                  </div>
-                </form>       
-              </div>
-              <div class="tab-pane fade" id="womensbim" role="tabpanel" aria-labelledby="womensbim">
-                <form>
-                  <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                      <div class="fit_form_field mb_30">
-                        <input class="fit_field_inner" type="text" placeholder="Height / Centimetre" />
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                      <div class="fit_form_field mb_30">
-                        <input class="fit_field_inner" type="text" placeholder="Weight / Kilogram " />
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                      <div class="fit_form_field mb_30">
-                        <select class="fit_field_inner mb_30">
-                          <option>Age</option>
-                          <option value="1">18+</option>
-                          <option value="2">20+</option>
-                          <option value="3">22+</option>
-                          <option value="4">24+</option>
-                          <option value="5">30+</option>
-                          <option value="6">60+</option>
-                          <option value="7">80+</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                      <div class="fit_form_field mb_30">
-                        <select class="fit_field_inner mb_30">
-                          <option>Sex</option>
-                          <option value="female">Femmmes</option>
-                          <option value="male">Hommes</option>
-                        </select>
-                      </div>
-                    </div>
+                 
                     <div class="col-lg-4 col-md-12 col-sm-12 col-12 text-md-right ">
                       <div class="fit_form_field mb_30">
-                        <a href="javascript:void(0);" class="fit_btn btn2">Calculer</a>
+                        <a href="javascript:void(0);" class="fit_btn btn2" onclick="calculateBMI()">Calculer</a>
                       </div>
                     </div>
                   </div>
                 </form> 
               </div>
-              <h4 class="fit_totleIBM">Votre BMI : <span class="">18.5</span></h4>
+              <h4 class="fit_totleIBM">Votre BMI : <span id="result">18.5</span></h4>
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-5">
         <div class="fit_bmichart">
-          <h1 class="bmi_title mb_30">BMI Chart</h1>
+          <h1 class="bmi_title mb_30">Tableau BMI</h1>
           <table class="w-100">
             <thead>
               <tr>
-                <th scope="col">Weight Status</th>
+                <th scope="col">Statut de poids</th>
                 <th scope="col">BMI</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Underweight</td>
-                <td>Below 18.5</td>
+                <td>Poids insuffisant</td>
+                <td>Dessous de 18.5</td>
               </tr>
               <tr>
-                <td>Healthy</td>
+                <td>En bonne santé</td>
                 <td>18.5 - 24.9</td>
               </tr>
               <tr>
-                <td>Overweight</td>
+                <td>En surpoids</td>
                 <td>25.0 - 29.9</td>
               </tr>
               <tr>
                 <td>Obese</td>
-                <td>30.0 - and Above</td>
+                <td>30.0 - Et ci-dessus</td>
               </tr>
             </tbody>
           </table>
@@ -682,7 +636,7 @@ Author: Kamleshyadav
               <div class="swiper-slide">
                 <div class="test_inner_slider">
                   <div class="test_img">
-                    <img src="assets/images/fit_testi01.jpg" class="img-fluid" alt="image">
+                    <img src="assets/images/testi/01.jpg" class="img-fluid" alt="image">
                   </div>
                   <h2>Sarah</h2>
                   <p class="testimonial_designtn">Membre</p>
@@ -696,7 +650,7 @@ Author: Kamleshyadav
               <div class="swiper-slide">
                 <div class="test_inner_slider">
                   <div class="test_img">
-                    <img src="assets/images/fit_testi01.jpg" class="img-fluid" alt="image">
+                    <img src="assets/images/testi/02.jpg" class="img-fluid" alt="image">
                   </div>
                   <h2>Mark</h2>
                   <p class="testimonial_designtn">Membre</p>
@@ -709,7 +663,7 @@ Author: Kamleshyadav
               <div class="swiper-slide">
                 <div class="test_inner_slider">
                   <div class="test_img">
-                    <img src="assets/images/fit_testi01.jpg" class="img-fluid" alt="image">
+                    <img src="assets/images/testi/03.jpg" class="img-fluid" alt="image">
                   </div>
                   <h2>Enzo</h2>
                   <p class="testimonial_designtn">Membre</p>
@@ -738,19 +692,19 @@ Author: Kamleshyadav
 <!-- Testimonial section end -->
 <!-- Newsletter section start -->
 <section class="fit_newsletter_wrapper">
-  <div class="container">
+  <div class="container" >
     <div class="row">
       <div class="col-md-6">
         <div class="fit_news_head">
           <h4 class="call_subheading">Appelez-nous aujourd'hui</h4>
           <h1 class="call_heading">Avez-vous une question? Nous serions ravis de vous aider!</h1>
           <a href="javascript:void(0);" class="call_number"> 
-            <span><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M27.688,14.474 C27.169,11.446 25.740,8.692 23.562,6.512 C21.265,4.221 18.357,2.766 15.149,2.316 L15.473,-0.001 C19.187,0.517 22.551,2.197 25.210,4.858 C27.731,7.387 29.385,10.572 29.991,14.081 L27.688,14.474 ZM21.034,8.923 C22.551,10.447 23.550,12.364 23.912,14.480 L21.609,14.874 C21.328,13.238 20.560,11.752 19.387,10.578 C18.145,9.335 16.572,8.554 14.843,8.311 L15.168,5.994 C17.402,6.306 19.430,7.317 21.034,8.923 ZM9.788,16.367 C11.385,18.327 13.189,20.070 15.342,21.424 C15.804,21.712 16.316,21.924 16.797,22.186 C17.040,22.323 17.209,22.280 17.408,22.074 C18.138,21.325 18.881,20.588 19.624,19.851 C20.597,18.884 21.821,18.884 22.801,19.851 C23.993,21.037 25.185,22.224 26.371,23.417 C27.363,24.416 27.357,25.640 26.358,26.652 C25.684,27.332 24.966,27.982 24.330,28.693 C23.400,29.737 22.239,30.074 20.903,29.999 C18.962,29.893 17.177,29.250 15.455,28.413 C11.629,26.552 8.358,23.973 5.619,20.713 C3.590,18.302 1.917,15.673 0.819,12.713 C0.282,11.283 -0.098,9.816 0.020,8.261 C0.095,7.305 0.451,6.487 1.156,5.819 C1.917,5.095 2.635,4.339 3.384,3.602 C4.358,2.641 5.581,2.641 6.561,3.596 C7.166,4.189 7.759,4.795 8.358,5.395 C8.939,5.982 9.519,6.556 10.100,7.143 C11.123,8.173 11.123,9.373 10.106,10.397 C9.376,11.133 8.652,11.870 7.909,12.588 C7.716,12.782 7.697,12.938 7.797,13.175 C8.290,14.349 8.995,15.392 9.788,16.367 Z"/></svg></span> +216 24 183 051
+            <span><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M27.688,14.474 C27.169,11.446 25.740,8.692 23.562,6.512 C21.265,4.221 18.357,2.766 15.149,2.316 L15.473,-0.001 C19.187,0.517 22.551,2.197 25.210,4.858 C27.731,7.387 29.385,10.572 29.991,14.081 L27.688,14.474 ZM21.034,8.923 C22.551,10.447 23.550,12.364 23.912,14.480 L21.609,14.874 C21.328,13.238 20.560,11.752 19.387,10.578 C18.145,9.335 16.572,8.554 14.843,8.311 L15.168,5.994 C17.402,6.306 19.430,7.317 21.034,8.923 ZM9.788,16.367 C11.385,18.327 13.189,20.070 15.342,21.424 C15.804,21.712 16.316,21.924 16.797,22.186 C17.040,22.323 17.209,22.280 17.408,22.074 C18.138,21.325 18.881,20.588 19.624,19.851 C20.597,18.884 21.821,18.884 22.801,19.851 C23.993,21.037 25.185,22.224 26.371,23.417 C27.363,24.416 27.357,25.640 26.358,26.652 C25.684,27.332 24.966,27.982 24.330,28.693 C23.400,29.737 22.239,30.074 20.903,29.999 C18.962,29.893 17.177,29.250 15.455,28.413 C11.629,26.552 8.358,23.973 5.619,20.713 C3.590,18.302 1.917,15.673 0.819,12.713 C0.282,11.283 -0.098,9.816 0.020,8.261 C0.095,7.305 0.451,6.487 1.156,5.819 C1.917,5.095 2.635,4.339 3.384,3.602 C4.358,2.641 5.581,2.641 6.561,3.596 C7.166,4.189 7.759,4.795 8.358,5.395 C8.939,5.982 9.519,6.556 10.100,7.143 C11.123,8.173 11.123,9.373 10.106,10.397 C9.376,11.133 8.652,11.870 7.909,12.588 C7.716,12.782 7.697,12.938 7.797,13.175 C8.290,14.349 8.995,15.392 9.788,16.367 Z"/></svg></span> +(216) 24 183 051
           </a>
         </div>
       </div>
         <div class="fit_news_data">
-          <h4 class="call_subheading">News letter</h4>
+          <h4 class="call_subheading">Newsletter</h4>
           <h1 class="call_heading">Abonnez-vous à notre newsletter</h1>
           <div class="row mt_30">
             <div class="col-xl-8 col-lg-7">
@@ -773,7 +727,7 @@ Author: Kamleshyadav
 <section class="fit_footer_wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-xl-3 col-lg-6">
+      <div class="col-xl-3 col-lg-6" style="margin-left: 10% !important;">
         <div class="fit_footer_box">
           <a href="index.html"><img src="assets/images/logo.png" class="img-fluid" alt="logo" title="logo"></a>
           <p class="footer_about_p">Suivez-nous sur les réseaux sociaux pour rester au courant des dernières actualités, événements et conseils de fitness.</p>
@@ -785,7 +739,7 @@ Author: Kamleshyadav
           </ul>
         </div>
       </div>
-      <div class="col-xl-3 col-lg-6">
+      <div class="col-xl-3 col-lg-6" style="margin-left: 30% !important;">
         <div class="fit_footer_box">
           <h2 class="footer_title underline_title">Contacts</h2>
           <ul class="footer_cntactul">
@@ -829,7 +783,7 @@ Author: Kamleshyadav
 </div>
 <!-- Copyright section end -->
 <!-- go to  top -->
-<a href="javascript:void(0);" id="scroll">Sommet</a>
+<a href="javascript:void(0);" id="scroll">Top</span></a>
 
 
 <!-- js files start -->
@@ -840,6 +794,13 @@ Author: Kamleshyadav
 <script src="assets/js/nice-select.min.js"></script>
 <script src="assets/js/SmoothScroll.min.js"></script>
 <script src="assets/js/custom.js"></script>
-
+<script>
+  $(".nav-tabs li a").click(function(){
+  $(".nav-tabs li a").removeClass("active");
+  $(this).addClass("active");
+});
+</script>
+    <script src="assets/js/show.js" ></script>
+    <script src="assets/js/Bmi.js" ></script>
 </body>
 </html>
